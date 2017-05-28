@@ -4,7 +4,7 @@ import org.hyperledger.fabric.sdk.Chain;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Fabric fabric = new Fabric("foo", "github.com/example_cc", new String[]{"a", "500", "b", "200"});
+        Fabric fabric = new Fabric("foo", "educhain", new String[]{"a", "500", "b", "200"});
         SampleOrg sampleOrg = fabric.getConfiguredOrganisationParameters();
         Chain chain = fabric.initBlockchain(sampleOrg);
         String update = fabric.invokeChaincode(chain, new String[]{"move", "a", "b", "100"});

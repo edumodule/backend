@@ -65,8 +65,8 @@ public class End2endAndBackAgainIT {
 
     private final int gossipWaitTime = testConfig.getGossipWaitTime();
 
-    private static final String CHAIN_CODE_NAME = "example_cc_go";
-    private static final String CHAIN_CODE_PATH = "github.com/example_cc";
+    private static final String CHAIN_CODE_NAME = "educhain_go";
+    private static final String CHAIN_CODE_PATH = "educhain";
     private static final String CHAIN_CODE_VERSION = "1";
     private static final String CHAIN_CODE_VERSION_11 = "11";
 

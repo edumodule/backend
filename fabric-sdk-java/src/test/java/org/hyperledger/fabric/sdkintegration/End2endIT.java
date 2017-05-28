@@ -79,8 +79,8 @@ public class End2endIT {
 
     private final int gossipWaitTime = testConfig.getGossipWaitTime();
 
-    private static final String CHAIN_CODE_NAME = "example_cc_go";
-    private static final String CHAIN_CODE_PATH = "github.com/example_cc";
+    private static final String CHAIN_CODE_NAME = "educhain_go";
+    private static final String CHAIN_CODE_PATH = "educhain";
     private static final String CHAIN_CODE_VERSION = "1";
 
     private static final String FOO_CHAIN_NAME = "foo";
@@ -693,7 +693,7 @@ public class End2endIT {
 
                                         if ("bar".equals(channelId) && blockNumber == 2) {
 
-                                            if ("example_cc_go".equals(namespace)) {
+                                            if ("educhain_go".equals(namespace)) {
                                                 if (rs == 0) {
                                                     assertEquals("a", readList.getKey());
                                                     assertEquals(1, readList.getVersion().getBlockNum());
