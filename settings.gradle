@@ -1,0 +1,4 @@
+rootProject.name = 'hackathon-fabric-java'
+
+include 'fabric-sdk-java'
+project(':fabric-sdk-java').projectDir = new File('fabric-sdk-java')

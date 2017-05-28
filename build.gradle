@@ -1,0 +1,38 @@
+apply plugin: 'application'
+
+mainClassName = "Main"
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(':fabric-sdk-java')
+
+    testCompile 'junit:junit:4.12'
+}
+
+task FabricEnvStart(type: Exec) {
+    workingDir 'network'
+    executable "./fabric.sh"
+    args "up"
+}
+
+task FabricEnvStop(type: Exec) {
+    workingDir 'network'
+    executable "./fabric.sh"
+    args "down"
+}
+
+task FabricEnvRecreate(type: Exec) {
+    workingDir 'network'
+    executable "./fabric.sh"
+    args "restart"
+}
