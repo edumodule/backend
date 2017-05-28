@@ -1,0 +1,3 @@
+[submodule "chaincode/src/educhain"]
+	path = chaincode/src/educhain
+	url = https://github.com/edumodule/educhain.git
