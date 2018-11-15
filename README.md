@@ -29,3 +29,6 @@ Create docker containers, loads nodejs dependencies:
 ```
 $ cd network; fabric.sh up
 ```
+The new test note:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsa mollitia optio similique sint eveniet blanditiis nam maiores quia iste ducimus ratione ullam, asperiores quam ea autem fugit aliquam in?
